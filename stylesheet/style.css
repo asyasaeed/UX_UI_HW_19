@@ -8,9 +8,10 @@
     margin-left: 30px;
     background: transparent;
     text-align: center;
-    
-    
+   
 }
+
+
 
 
 /* 3 dots*/
@@ -21,7 +22,9 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    border: none;
+    border: none !important;
+   
+   
    
     }
 
@@ -237,26 +240,51 @@
 
 
 #proj1-display{
+    position: relative;
     grid-area: proj1-display;
-    background-image: url(../images/Traveasy.jpg);
+   
     
    
 }
  
 #proj2-display{
     grid-area: proj2-display;
-    background-image: url(../images/PlateTheory.jpg);
+    
   
 }
 #proj3-display{
     grid-area: proj3-display;
-    background-color: #f1f3ce;
+    
    
 }
 #proj4-display{
     grid-area: proj4-display;
-    background-color: #f1f3ce;
    
+   
+}
+
+.hovering:hover {
+    opacity: 1;
+}
+
+
+.overlay{
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1;
+}
+
+
+.proj-txt{
+  color: white;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+
 }
 /*footer*/
 .social-footer {

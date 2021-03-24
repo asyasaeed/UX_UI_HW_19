@@ -1,16 +1,28 @@
+
+
 /*navigation*/
 #navbar{
-    float: right;
-    margin:30px;
+   position: absolute;
+    display: inline-block;
+    margin-top:20px;
+    margin-left: 30px;
     background: transparent;
     text-align: center;
+    
     
 }
 
 
 /* 3 dots*/
 .nav-dots{
-    margin-top: 15px;
+    margin-top: 10px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+   
     }
 
 .nav-icon{
@@ -19,35 +31,54 @@
     height: 10px;
     border-radius: 25px;
     background-color: #f62a00;
-    margin-left:1px;
-    margin-right: 1px;
+    margin-left:2px;
+    margin-right: 2px;
     margin-bottom: 15px;
 }
 
 
 /* navigation icons*/
-.navbar ul{
-  
+.icon-bar ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    
-  }
+    }
 
 .icon-bar{
     display: none;
-    position:relative;
-    font-size: 40px;
-
+    position:absolute;
+    min-width: 60px;
+    font-size: 35px;
+    z-index: 1;
+    margin-top:30px;
+    justify-content: center;
 }
 
 .fa-home, .fa-user, .fa-envelope {
-   
     color: #f62a00;
     margin-bottom: 20px;
-   
-   
+   }
+
+   .home {
+    height: 65%;
+    width: 65%;
+    margin-top: 15px;
 }
+    
+   
+   .about {
+      height: 55%;
+      width: 55%;
+      margin-top: 30px;
+   }
+
+   .contact{
+    height: 65%;
+    width: 65%;
+    margin-top: 25px;
+}
+
+
 
 /*Body*/
 
@@ -59,13 +90,12 @@
 
 #content1{
     height: 90vh;
-   /* border-style: solid;
+    /*border-style: solid;
     border-color: black;*/
 }
 #herobg{
     height:60vh;
     background-color: #00293c;
-   /* background-image: linear-gradient( #414345,#232526, #232526);*/
 
 }
 
@@ -106,7 +136,8 @@
 }
 #hero-title{
     grid-area: hero-title;
-    top: 150px;
+    top: 140px;
+    text-align: center;
    /* border-style: solid;
     border-color: black;*/
 }
@@ -137,36 +168,35 @@
 }
 
 .profile-img{
-    height:180px;
-    width:180px;
+    height:200px;
+    width:200px;
     border-radius: 100%;
 }
 
 #intro{
     grid-area:"intro";
-   
-    /*border-style: solid;
+    padding: 0px;
+   /* border-style: solid;
     border-color: black;*/
     top:30vh;
+
 }
 
-#intro-txt{
-    max-width: 605px;
+.intro-txt{
+    max-width: 800px;
     text-align: center;
+  }
 
-    }
-
-
-#intro-txt p{
+.intro-txt p{
     font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
 
 /*content 2*/
 #content2{
-    height: 140vh;
+    height: 145vh;
    /* border-style: solid;
     border-color: black;*/
 }
@@ -403,7 +433,7 @@
 }
 
 /*------------------------------------------------------------------*/
-/* Mobile Landscape */
+/* Mobile Landscape 
 
 @media only screen and (min-width: 600px){
 
@@ -419,7 +449,7 @@
     }
     
     
-    /* 3 dots*/
+    /* 3 dots
     .nav-dots{
         margin-top: 10px;
        
@@ -443,7 +473,7 @@
       }
     
     
-    /* navigation icons*/
+    /* navigation icons
     .fa-home, .fa-user, .fa-envelope {
         color: #f62a00;
         margin-bottom: 10px;
@@ -546,7 +576,7 @@
 }
 
 /*------------------------------------------------------------------*/
-/* Tablet Landscape */
+/* Tablet Landscape 
 
 @media only screen and (min-width: 768px){
 
@@ -562,12 +592,13 @@
     }
     
     
-    /* 3 dots*/
+    /* 3 dots
     .nav-dots{
         margin-top: 10px;
        
+       
     }
-    .nav-icon{
+   .nav-icon{
         display: inline-flex;
         width: 8px;
         height: 8px;
@@ -586,7 +617,7 @@
       }
     
     
-    /* navigation icons*/
+    /* navigation icons
     .fa-home, .fa-user, .fa-envelope {
         color: #f62a00;
         margin-bottom: 15px;
@@ -642,17 +673,17 @@
 
     
     #profile-image{
-        top:28vh;
+        top:25vh;
     }
     .profile-img{
-        height:180px;
-        width:180px;
+        height:200px;
+        width:200px;
         border-radius: 100%;
     }
 
     
     #intro{
-        top:35vh;
+        top:25vh;
         padding-left:40px;
         padding-right: 40px;
     }
